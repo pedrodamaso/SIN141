@@ -1,14 +1,18 @@
 package com.ufv.locadora.dto;
 
 import com.ufv.locadora.model.StatusLocacao;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class LocacaoResponseDTO {
     private Long id;
     private Long clienteId;
